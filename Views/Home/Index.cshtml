@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+        <h2>Cursos</h2>
+        <p>Use el siguiente botón para ver los cursos que ofrece el instituto.</p>
+        <p>@Html.ActionLink("Consultar cursos", "Index", new { controller = "Cursos" }, new { @class = "btn btn-primary" })</p>
+    </div>
+
+    <div class="col-md-6">
+        <h2>Alumnos</h2>
+        <p>Vea todos los alumnos inscriptos en la institución.</p>
+        <p>@Html.ActionLink("Ver Alumnos", "Index", "Alumnos", new { controller = "Alumnos" }, new { @class = "btn btn-info" })</p>
+        @*<p><a class="btn btn-info" href="https://go.microsoft.com/fwlink/?LinkId=301867">Ver Alumnos&raquo;</a></p>*@
+    </div>
+
+    @*    <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>*@
+
+</div>
